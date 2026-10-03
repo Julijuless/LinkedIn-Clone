@@ -1,0 +1,532 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+body {
+    background-color: rgb(244, 242, 238) !important;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+    height: 60px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.top {
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+.icons .home:hover{
+    text-decoration: underline;
+    color: blue;
+}
+
+.image img {
+    width: 30px;
+}
+
+.search input {
+    border: none;
+    outline: none;
+    width: 300px;
+    background-color: rgb(198, 198, 252);
+}
+
+.home p {
+    font-size: small;
+}
+
+.home img {
+    width: 30px;
+    border-radius: 60px;
+}
+
+.home {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.home p a{
+    text-decoration: none;
+    color: rgb(104, 103, 103);
+}
+
+.container {
+    display: grid;
+    flex-direction: column;
+    grid-template-columns: 20% 50% 25%;
+    gap: 25px;
+    /* background-color: black; */
+    margin-top: 40px;
+}
+
+.leftbar {
+    background-color: white;
+    /* border: 1px solid black; */
+    width: 100%;
+    height: 55vh;
+    border-radius: 5px;
+}
+
+.back {
+    width: 100%;
+    height: 75px;
+    background-color: rgb(92, 102, 143);
+    border-radius: 5px;
+    position: relative;
+}
+
+.id-img {
+    position: absolute;
+    margin: 20% 0 0 35%;
+}
+
+.id-img img {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+}
+
+.name {
+    margin: 12% 0 0 0;
+    text-align: center;
+}
+
+.name a {
+    text-decoration: none;
+    color: black;
+}
+
+.name a:hover {
+    text-decoration: underline;
+}
+
+.connect {
+    padding: 0 5px 0 5px;
+    font-size: 12px;
+}
+
+.grow {
+    margin-top: -16px;
+}
+
+.grow img {
+    width: 15px;
+    height: 15px;
+}
+
+.book {
+    padding: 0 5px 0 5px;
+}
+
+.groups {
+    margin-top: 20%;
+    height: 8em;
+    width: 100%;
+    background-color: white;
+    /* border: 1px solid black; */
+    border-radius: 5px;
+}
+.hashtag a{
+    font-size: smaller;
+    font-weight: bold;
+}
+.hashtag{
+    color: rgb(34, 85, 226);
+    padding: 0 5px 0 5px;
+}
+.discover a{
+    font-weight: bold;
+}
+.discover{
+    align-items: center;
+    text-align: center;
+}
+
+
+
+/* .middlebar{
+    
+    width: 100%;
+    height: 100vh;
+} */
+
+.middlebar1 {
+    /* background-color: white; */
+    /* border: 1px solid black; */
+    height: 7em;
+    width: 100%;
+    background-color: white;
+    border-radius: 5px;
+    padding: 8px;
+}
+
+.posts {
+    height: 120vh;
+    width: 100%;
+    background-color: white;
+    /* border: 1px solid black; */
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+.idimg img {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+}
+
+.idimg input {
+    height: 45px;
+    width: 80%;
+    border-radius: 30px;
+    border: 1px solid gray;
+    padding-left: 10px;
+    outline: none;
+}
+
+.idimg input:hover {
+    background-color: rgba(238, 230, 230, 0.657);
+    cursor: pointer;
+}
+
+.image{
+    font-size: 20px;
+}
+
+.image i{
+    padding-right: 10px;
+}
+
+.media i{
+    color: rgb(55,143,233);
+    cursor: pointer;
+}
+.media:hover{
+    background-color: rgb(224, 222, 222);
+}
+.media small{
+    font-size: small;
+}
+
+.event i{
+    color: rgb(195,125,22);
+    cursor: pointer;
+}
+.event:hover{
+    background-color: rgb(224, 222, 222);
+}
+.event small{
+    font-size: small;
+}
+
+.article i{
+    color: rgb(224,104,71);
+    cursor: pointer;
+}
+.article:hover{
+    background-color: rgb(224, 222, 222);
+}
+.article small{
+    font-size: small;
+}
+
+.rightbar {
+    background-color: white;
+    /* border: 1px solid black; */
+    width: 100%;
+    height: 50vh;
+    border-radius: 5px;
+}
+.info{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5px 0 5px;
+}
+.follow{
+    display: flex;
+    margin: auto;
+}
+.follow img{
+    width: 60px;
+    height: 60px;
+}
+.follow h6{
+    font-size: small;
+    margin: auto;
+}
+.follow p{
+    font-size: smaller;
+    /* margin: auto; */
+}
+.profile button{
+    border-radius: 30px;
+    border: 1px solid;
+
+}
+.profile{
+    padding: 8px 0px 8px 0px;
+}
+/* .hiring{
+    position: relative;
+    z-index: 1;
+    top: 0%;
+} */
+
+.hiring img{
+    margin-top: 20%;
+    height: 15em;
+    width: 100%;
+    /* background-color: white; */
+    /* border: 1px solid black; */
+    border-radius: 5px;
+    /* position: static;
+    z-index: 1;
+    top: 0%; */
+}
+.pin{
+    display: flex;
+    justify-content: space-between;
+}
+.africa img{
+    width: 60px;
+    height: 50px;
+    padding: 0 5px 0 5px;
+}
+.max h6{
+    font-size: small;
+}
+.max p{
+    font-size: smaller;
+}
+.max{
+    display: flex;
+    gap: 20px;
+}
+.prom{
+    padding: 0 5px 0 5px;
+    margin-top: 10px;
+}
+.promote{
+    margin-top: -17px;
+}
+.protect p{
+    font-size: small;
+    padding: 0 5px 0 5px;
+}
+.meraki img{
+    width: 100%;
+}
+.learn p{
+    color: rgb(72, 72, 185);
+    font-weight: bold;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+}
+.ticons{
+   display: flex;
+   align-items: center;
+   text-align: center;
+}
+.ticons p{
+    font-size: small;
+}
+.green{
+    display: flex;
+}
+.green p{
+    font-size: small;
+}
+.emoji{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5px 0 5px;
+}
+.seal{
+    display: flex;
+}
+.seal:hover{
+    border: none;
+    background-color: #ccc;
+}
+.like{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5px 0 5px;
+    cursor: pointer;
+}
+
+
+
+
+.mess-aging {
+    display: flex;
+    justify-content: space-between;
+}
+
+.mess-aging img {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}
+
+.justify {
+    width: 100%;
+}
+
+.remove i {
+    padding-right: 16px;
+}
+
+.remove {
+    background: transparent;
+    border: none;
+    display: flex;
+    margin-top: -10px;
+    width: 30%;
+}
+
+.remove #change {
+    display: none;
+}
+
+.remove:focus #change {
+    display: block;
+}
+
+.remove:focus #upp {
+    display: none;
+}
+
+.accordion-container {
+    position: fixed;
+    bottom: -15px;
+    right: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    z-index: 10;
+}
+
+.accordion-section {
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.accordion-header {
+    background-color: white;
+    color: white;
+    cursor: pointer;
+}
+
+.accordion-header:hover{
+    background-color: #ccc;
+}
+
+.accordion-header div,
+.accordion-header div p {
+    align-items: center;
+}
+
+.accordion-header div p {
+    width: 50%;
+}
+
+.accordion-header div p #imgg {
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+#butt {
+    border: none;
+    background-color: rgba(250, 235, 215, 0);
+    border-radius: 48%;
+}
+
+#butt:hover,
+.accordion-header div p #imgg:hover {
+    background-color: rgba(255, 255, 255, 0.457);
+}
+
+
+.accordion-content {
+    padding: 10px;
+    display: none;
+    height: 400px;
+    background-color: white;
+}
+
+.accordion-content.active {
+    display: block;
+}
+
+#iwonder {
+    height: 35px;
+    width: 100%;
+    border-radius: 5px;
+    background-color: rgb(237, 243, 248) !important;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.search2{
+    width: 100%;
+}
+
+.search2 input{
+    width: 100% !important;
+    background:transparent;
+    border: none;
+    outline: none;
+}
+
+.sliders button{
+    background: transparent;
+    border: none;
+}
+
+.message03 {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.message03 img{
+    width: 60%;
+}
+
+.message05{
+    font-weight: 600 !important;
+}
+
+.reach01{
+    margin-top: -15px !important;
+    font-size: 14px;
+}
+
+.send03{
+    border: none;
+    border-radius: 20px;
+    color: white;
+    width: 70% !important;  
+    background-color:deepskyblue ;
+}

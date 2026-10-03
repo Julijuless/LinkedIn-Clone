@@ -1,0 +1,361 @@
+body {
+    background-color: rgb(244, 242, 238) !important;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+    height: 60px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.top {
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+.icons .home:hover{
+    text-decoration: underline;
+    color: blue;
+}
+
+.image img {
+    width: 30px;
+}
+
+.search input {
+    border: none;
+    outline: none;
+    width: 300px;
+    background-color: rgb(198, 198, 252);
+}
+
+.home p {
+    font-size: small;
+}
+.home p a{
+    text-decoration: none;
+    color: rgb(104, 103, 103);
+}
+
+.home img {
+    width: 30px;
+    border-radius: 60px;
+}
+
+.home {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.container {
+    display: grid;
+    flex-direction: column;
+    grid-template-columns: 20% 50%;
+    gap: 5%;
+    /* margin-left: 50%; */
+    /* background-color: black; */
+    margin-top: 40px;
+}
+.leftbar {
+    background-color: white;
+    border: 1px solid rgb(191, 190, 190);
+    width: 110%;
+    height: 55vh;
+    border-radius: 5px;
+    padding: 8px;
+}
+
+.rightbar{
+     /* background-color: white; */
+    border: 1px solid rgb(187, 186, 186);
+    height: 3em;
+    width: 145%;
+    background-color: white;
+    border-radius: 5px;
+    padding: 8px;
+}
+.achieve h5{
+    font-size: 14px;
+    font-weight: normal;
+}
+.achieve{
+    justify-content: space-between;
+    display: flex;
+}
+.groups{
+    display: flex;
+    gap: 10px;
+    /* text-align: center; */
+    align-items: center;
+}
+.groups p{
+    font-size: 12px;
+}
+.page{
+    display: flex;
+    gap: 10px;
+    /* text-align: center; */
+    align-items: center;
+}
+.hiring img{
+    margin-top: 20%;
+    height: 15em;
+    width: 110%;
+    border-radius: 5px;
+}
+.hiring{
+    padding-right: 20px;
+}
+.connect{
+    height: 180vh;
+    width: 102.5%;
+    background-color: white;
+    border: 1px solid rgb(178, 176, 176);
+    border-radius: 5px;
+    margin-left: -10px;
+    padding: 8px;
+    margin-top: 40px;
+}
+.subscribe{
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 20px 10px;
+    margin-left: 30px;
+    /* justify-content: space-around; */
+}
+.connects{
+    height: 18em;
+    width: 30%;
+    background-color: white;
+    border: 1px solid rgb(165, 161, 161);
+    border-radius: 5px;
+}
+.xmark{
+    position: absolute;
+    margin: 4% 0 0 80%;
+    font-size: 18px;
+}
+.xmark button{
+    border: none;
+    height: 33px;
+    width: 33px;
+    border-radius: 50%;
+    background-color: rgba(59, 58, 58, 0.348);
+    color: white;
+}
+.back-img{
+    height: 4em;
+    width: 100%;
+    background-color: rgb(52, 58, 79);
+    position: relative;
+    border-radius: 5px 5px 0 0;
+}
+.proimg img{
+    height: 90px;
+    width: 90px;
+    /* background-color: black; */
+    /* border: 2px solid white; */
+    border-radius: 50%;
+    margin: 25px 0 0 70px;
+    position: absolute;
+}
+.carolina{
+    margin-top: 50px;
+    padding: 5px;
+}
+.carol h5{
+    font-size: large;
+}
+.carol h6{
+    font-size: small;
+    font-weight: normal;
+}
+.carol p{
+    font-size: smaller;
+}
+.border button{
+    border-radius: 30px;
+    border: 1px solid rgb(37, 73, 192);
+    /* align-items: center; */
+    width: 232px;
+   
+}
+.border button:hover{
+    background-color: rgb(168, 191, 229);
+}
+/* .border{
+    text-align: center;
+    
+} */
+
+
+.mess-aging {
+    display: flex;
+    justify-content: space-between;
+}
+
+.mess-aging img {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}
+
+.justify {
+    width: 100%;
+}
+
+.remove i {
+    padding-right: 16px;
+}
+
+.remove {
+    background: transparent;
+    border: none;
+    display: flex;
+    margin-top: -10px;
+    width: 30%;
+}
+
+.remove #change {
+    display: none;
+}
+
+.remove:focus #change {
+    display: block;
+}
+
+.remove:focus #upp {
+    display: none;
+}
+
+.accordion-container {
+    position: fixed;
+    bottom: -15px;
+    right: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    z-index: 10;
+}
+
+.accordion-section {
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.accordion-header {
+    background-color: white;
+    color: white;
+    cursor: pointer;
+}
+
+.accordion-header:hover{
+    background-color: #ccc;
+}
+
+.accordion-header div,
+.accordion-header div p {
+    align-items: center;
+}
+
+.accordion-header div p {
+    width: 50%;
+}
+
+.accordion-header div p #imgg {
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+#butt {
+    border: none;
+    background-color: rgba(250, 235, 215, 0);
+    border-radius: 48%;
+}
+
+#butt:hover,
+.accordion-header div p #imgg:hover {
+    background-color: rgba(255, 255, 255, 0.457);
+}
+
+
+.accordion-content {
+    padding: 10px;
+    display: none;
+    height: 400px;
+    background-color: white;
+}
+
+.accordion-content.active {
+    display: block;
+}
+
+#iwonder {
+    height: 35px;
+    width: 100%;
+    border-radius: 5px;
+    background-color: rgb(237, 243, 248) !important;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.search2{
+    width: 100%;
+}
+
+.search2 input{
+    width: 100% !important;
+    background:transparent;
+    border: none;
+    outline: none;
+}
+
+.sliders button{
+    background: transparent;
+    border: none;
+}
+
+.message03 {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.message03 img{
+    width: 60%;
+}
+
+.message05{
+    font-weight: 600 !important;
+}
+
+.reach01{
+    margin-top: -15px !important;
+    font-size: 14px;
+}
+
+.send03{
+    border: none;
+    border-radius: 20px;
+    color: white;
+    width: 70% !important;  
+    background-color:deepskyblue ;
+}
